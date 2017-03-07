@@ -1,0 +1,16 @@
+package forex;
+
+option java_package = "com.rehtal.forex.message";
+option java_outer_classname = "ProtoForex";
+
+message ForexPrice {
+  optional double open  = 1;
+  optional double high  = 2;
+  optional double low   = 3;
+  optional double close = 4;
+  optional int32 volume = 5;
+}
+
+enum CurrencyPair {
+  EURUSD = 1;
+}
